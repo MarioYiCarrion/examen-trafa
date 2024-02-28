@@ -12,7 +12,7 @@ import pe.edu.idat.ec02_moviles.util.TipoMensaje
 
 class FormularioActivity : AppCompatActivity(), View.OnClickListener {
 
-    private lateinit var binding: ActivityFormularioBinding
+    lateinit var binding: ActivityFormularioBinding
 
     private val listaPreferencias = ArrayList<String>()
     private val listarCuestionario = ArrayList<String>()
@@ -85,23 +85,6 @@ class FormularioActivity : AppCompatActivity(), View.OnClickListener {
         return respuesta
     }
 
-    override fun onClick(v: View?) {
-        if (v is CheckBox) {
-            agregarQuitarPreferencia(v)
-        } else {
-            when (v?.id) {
-                R.id.btnresolver -> {
-                    registrarCuestionario()
-                    irListadoCuestionario()
-                }
-                else -> {
-
-                }
-            }
-        }
-    }
-
-
     private fun agregarQuitarPreferencia(v: View) {
         val checkBox = v as CheckBox
         if (checkBox.isChecked){
@@ -159,15 +142,41 @@ class FormularioActivity : AppCompatActivity(), View.OnClickListener {
         else binding.rbno2.text.toString()
     }
 
-    private fun irListadoCuestionario() {
-        if (validarFormulario()) {
-            var intentListado = Intent(
-                applicationContext,
-                ListadoCuestionarioActivity::class.java
+
+   private fun irListadoCuestionario() {
+     if (validarFormulario()) {
+       var intentListado = Intent(
+         applicationContext,
+           ListadoCuestionarioActivity::class.java
             ).apply {
-                putExtra("listaCuestionarios", listarCuestionario)
+                putExtra("listarCuestionario", listarCuestionario)
             }
             startActivity(intentListado)
         }
     }
+/*
+    private fun irListadoCuestionario(){
+        var intentListado = Intent(applicationContext, ListadoCuestionarioActivity::class.java)
+            .apply { putExtra("listarCuestionario", listarCuestionario)
+        }
+
+        startActivity(intentListado)
+    }*/
+
+    override fun onClick(v: View?) {
+        if (v is CheckBox) {
+            agregarQuitarPreferencia(v)
+        } else {
+            when (v?.id) {
+                R.id.btnresolver -> {
+                    registrarCuestionario()
+                    irListadoCuestionario()
+                }
+                else -> {
+
+                }
+            }
+        }
+    }
+
 }
