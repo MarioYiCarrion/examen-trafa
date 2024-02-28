@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">EC02_MOVILES</string>
+    <string name="tituloRegistro">INFORMACION</string>
+    <string name="botonAccederRegistro">Acceder</string>
+    <string name="botonListarRegistro">Listar</string>
+    <string name="btnMarioRegistrar">REGISTRAR</string>
+    <string name="btnMarioFormulario">FORMULARIO</string>
+    <string name="btnMarioListado">LISTADO</string>
+    <string name="titulo4lista1">LISTA DE EVENTOS INTERNACIONALES</string>
+    <string name="titulocuestionario">CUESTIONARIO</string>
+    <string name="valpregunta1">1. Marque sus habilidades.</string>
+    <string name="valpregunta2">2. ¿Cuán significativo es tu trabajo?</string>
+    <string name="valpregunta3">3. ¿Qué tan bien te pagan en el trabajo que haces?</string>
+    <string name="valpregunta4">4. ¿Trabajas bajo presión?</string>
+    <string name="valpregunta5">5. ¿Tienes oportunidad de crecimiento en tu trabajo?</string>
+    <string name="valautoconocimiento">Autoconocimiento</string>
+    <string name="valempatia">Empatia</string>
+    <string name="valcomunicacion">Comunicacion asertiva</string>
+    <string name="valtoma">Toma de deciciones</string>
+    <string name="valpensamiento">Pensamiento crítico</string>
+    <string name="valninguno">Ninguno</string>
+    <string name="valmucho">Mucho</string>
+    <string name="valmasomenos">Mas o menos</string>
+    <string name="valpoco">Poco</string>
+    <string name="valbien">Bien</string>
+    <string name="valregular">Regular</string>
+    <string name="valmal">Mal</string>
+    <string name="valsi">Si</string>
+    <string name="valno">No</string>
+    <string name="valresolver">Resolver</string>
+    <string name="errorpregunta1">Debe marcar minimo una opcion.</string>
+    <string name="titulolistadecuestionario">LISTA DE REGISTROS DE CUESTIONARIO</string>
+
+</resources>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <Button
+        android:id="@+id/btnRegistroListar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/botonListarRegistro"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistroAcceder" />
+
+    <Button
+        android:id="@+id/btnRegistroAcceder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/botonAccederRegistro"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/rgEstadoCivil" />
+
+    <RadioGroup
+        android:id="@+id/rgEstadoCivil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/rbSoltero"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Soltero"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rbCasado"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Casado"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rbDivorciado"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Divorciado"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rbViudo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Viudo"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="90dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="90dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/tituloRegistro"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tvNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/tvApellido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+
+    <EditText
+        android:id="@+id/tvDni"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="DNI"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvApellido" />
+
+    <EditText
+        android:id="@+id/tvCelular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="Celular"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvDni" />
+
+    <EditText
+        android:id="@+id/tvEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCelular" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Seleccione sus cualidades"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <CheckBox
+            android:id="@+id/cbPuntual"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Puntual"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/cbRespetuoso"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Respetuoso"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/cbResponsable"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Responsable"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/cbOtro"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Otro"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tvCualidad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Ingrese otra cualidad"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Estado civil:"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCualidad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
